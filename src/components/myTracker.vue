@@ -1,17 +1,19 @@
 <template>
+
   <h1>Registro Spese</h1>
+
     <div class="contenitore">
-        <div>
-            <h3> Descrizione spesa </h3>
+        <div id="DescriptionDiv">
+            <h3 style="color:rgb(16, 16, 73), rgb(39, 41, 156)"> Descrizione spesa </h3>
             <input type="text" id="description" v-model="expense">
         </div>
         
         <div class="btn">
-            <button @click="addExpense">Aggiungi</button>
+            <button id="button" @click="addExpense">Aggiungi</button>
         </div>
         
-        <div>
-            <h3> Importo Spesa </h3>
+        <div id="ImportoDiv">
+            <h3 style="color:rgb(16, 16, 73), rgb(39, 41, 156)"> Importo Spesa </h3>
             <input type="number" id="amount" placeholder="€" v-model="amount">
         </div>
         
@@ -94,6 +96,7 @@ export default {
 
 
 <style>
+
 .contenitore{
     display: grid;
     width: 800px;
@@ -102,11 +105,17 @@ export default {
     margin: 0 auto;
     border: 1px solid;
     border-radius: 16px;
+    background-image: linear-gradient(to right, rgb(59, 167, 255), rgb(98, 184, 255));
 }
 
 .btn{
     margin-top: auto;
     margin-bottom: 20px;
+    
+}
+
+#button{
+    border-radius: 16px;
 }
 
 table, th, td{
@@ -117,7 +126,7 @@ table, th, td{
     border: 1px solid #333;
     border-collapse: collapse;  
     padding: 5px; 
-    
+    background-color: white;
 }
 
 .tableDiv{
@@ -126,6 +135,18 @@ table, th, td{
 
 #trash{
     width: 15px;
+}
+
+input{
+    border-radius: 16px;
+}
+
+#DescriptionDiv{
+    margin-left: 160px;
+}
+
+#ImportoDiv{
+    margin-right: 160px;
 }
 
 </style>
