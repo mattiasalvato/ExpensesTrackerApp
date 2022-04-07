@@ -1,5 +1,5 @@
 <template>
-  <h1>Registro Spese</h1>
+  <h1>Registro spese</h1>
     <div class="contenitore">
         <div>
             <h3> Descrizione spesa </h3>
